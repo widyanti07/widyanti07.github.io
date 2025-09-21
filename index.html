@@ -5,117 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Profil Widyanti Salha</title>
   <style>
-    /* Reset dan styling dasar */
+    /* Reset */
     * {
       box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
       margin: 0;
       padding: 0;
-      color: #333;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #d0f0fd 0%, #fcefee 100%);
+      color: #444;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
-      min-height: 100vh;
       align-items: center;
       padding: 20px;
     }
-    .container {
-      background: white;
-      max-width: 700px;
+    .card {
+      background: #ffffffcc; /* putih transparan lembut */
+      max-width: 720px;
       width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
       overflow: hidden;
+      transition: transform 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
     header {
-      background-color: #ff6f91;
-      color: white;
+      background: linear-gradient(90deg, #a8dadc, #ffe0e0);
+      padding: 60px 30px 90px 30px;
       text-align: center;
-      padding: 40px 20px 60px 20px;
       position: relative;
+      color: #2f4f4f; /* dark slate gray */
     }
     header img {
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      border: 5px solid white;
+      border: 5px solid #fcefee;
       object-fit: cover;
       position: absolute;
-      bottom: -70px;
+      bottom: -80px;
       left: 50%;
       transform: translateX(-50%);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
       background: white;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.8rem;
+      font-size: 3rem;
       font-weight: 700;
+      margin-bottom: 8px;
       letter-spacing: 1.5px;
+      color: #2f4f4f;
     }
     header p.nim {
-      margin-top: 8px;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 600;
       letter-spacing: 1.2px;
-      opacity: 0.9;
+      opacity: 0.85;
+      color: #4a6a6a;
     }
     main {
-      padding: 100px 30px 40px 30px;
+      padding: 120px 40px 40px 40px;
     }
     section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     section h2 {
-      font-size: 1.8rem;
-      color: #ff6f91;
-      border-bottom: 3px solid #ff6f91;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
+      font-size: 2rem;
+      color: #7ea9a7; /* hijau mint lembut */
+      border-bottom: 3px solid #f7b7b7; /* pink lembut */
+      padding-bottom: 10px;
+      margin-bottom: 20px;
       font-weight: 700;
     }
     section p, section ul {
-      font-size: 1.1rem;
-      line-height: 1.6;
+      font-size: 1.15rem;
+      line-height: 1.7;
       color: #555;
     }
     ul {
-      padding-left: 20px;
+      padding-left: 25px;
     }
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
     .contact a {
-      color: #ff6f91;
+      color: #7ea9a7;
       font-weight: 600;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
     .contact a:hover {
+      color: #f7b7b7;
       text-decoration: underline;
     }
-    /* Responsif */
-    @media (max-width: 480px) {
+    /* Responsive */
+    @media (max-width: 600px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
       header p.nim {
         font-size: 1rem;
       }
       main {
-        padding: 90px 20px 30px 20px;
+        padding: 100px 20px 30px 20px;
       }
       section h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
       }
     }
   </style>
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
+  <div class="card">
     <header>
-      <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Foto Widyanti Salha" />
+      <img src="widyanti salha.jpg" alt="" />
       <h1>Widyanti Salha</h1>
       <p class="nim">NIM: 22059030240012</p>
     </header>
@@ -123,7 +134,7 @@
       <section>
         <h2>Tentang Saya</h2>
         <p>
-          Saya adalah mahasiswi semester 7 di Universitas Teuku Umar (UTU). Saya memiliki minat besar dalam bidang teknologi, desain, dan komunikasi. Saya aktif mengembangkan keterampilan di bidang pemrograman web, desain grafis, serta public speaking untuk menunjang karir dan pengembangan diri saya.
+          Saya adalah mahasiswi semester 7 Program Studi Teknologi Informasi,Fakultas Teknik, di Universitas Teuku Umar. Saya berfokus mengembangkan keahlian di bidang teknologi, desain, dan komunikasi, dengan minat pada pengembangan sistem informasi, desain grafis, serta public speaking. Melalui pengalaman menjadi anggota panitia acara kampus, saya mengasah kemampuan kepemimpinan dan kerja sama tim.Dengan prinsip "Di mana ada kemauan, di situ ada jalan", saya berkomitmen untuk terus belajar dan memberikan kontribusi positif.
         </p>
       </section>
       <section>
@@ -146,8 +157,7 @@
       <section>
         <h2>Kontak</h2>
         <p class="contact">
-          Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a><br />
-          LinkedIn: <a href="https://www.linkedin.com/in/usernameanda" target="_blank" rel="noopener noreferrer">linkedin.com/in/usernameanda</a><br />
+          Email: <a href="salha301104@gmail.com">salha301104@gmail.com</a><br />
           GitHub: <a href="https://github.com/widyanti07" target="_blank" rel="noopener noreferrer">github.com/widyanti07</a>
         </p>
       </section>
