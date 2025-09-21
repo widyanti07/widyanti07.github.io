@@ -1,57 +1,157 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Profil Widyanti Salha</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #f0f4f8; }
-        header { text-align: center; }
-        img { width: 150px; height: 150px; border-radius: 50%; }
-        h1 { color: #2c3e50; }
-        section { background: white; padding: 15px; margin-top: 20px; border-radius: 8px; }
-        h2 { border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }
-        ul { list-style-type: disc; padding-left: 20px; }
-        a { color: #2c3e50; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Widyanti Salha</title>
+  <style>
+    /* Reset dan styling dasar */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 700px;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+    header {
+      background-color: #ff6f91;
+      color: white;
+      text-align: center;
+      padding: 40px 20px 60px 20px;
+      position: relative;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      background: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    header p.nim {
+      margin-top: 8px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      opacity: 0.9;
+    }
+    main {
+      padding: 100px 30px 40px 30px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      color: #ff6f91;
+      border-bottom: 3px solid #ff6f91;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    section p, section ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .contact a {
+      color: #ff6f91;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    /* Responsif */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p.nim {
+        font-size: 1rem;
+      }
+      main {
+        padding: 90px 20px 30px 20px;
+      }
+      section h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
     <header>
-        <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Foto Widyanti Salha" />
-        <h1>Widyanti Salha</h1>
-        <p>NIM: 22059030240012</p>
+      <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Foto Widyanti Salha" />
+      <h1>Widyanti Salha</h1>
+      <p class="nim">NIM: 22059030240012</p>
     </header>
-
-    <section>
+    <main>
+      <section>
         <h2>Tentang Saya</h2>
-        <p>Saya adalah mahasiswi semester 7 di Universitas Teuku Umar (UTU). Saya tertarik pada teknologi, desain, dan komunikasi.</p>
-    </section>
-
-    <section>
+        <p>
+          Saya adalah mahasiswi semester 7 di Universitas Teuku Umar (UTU). Saya memiliki minat besar dalam bidang teknologi, desain, dan komunikasi. Saya aktif mengembangkan keterampilan di bidang pemrograman web, desain grafis, serta public speaking untuk menunjang karir dan pengembangan diri saya.
+        </p>
+      </section>
+      <section>
         <h2>Riwayat Pendidikan</h2>
         <ul>
-            <li>Universitas Teuku Umar (UTU), 2022 - sekarang</li>
-            <li>SMA Negeri 1 Meukek, 2019 – 2022</li>
-            <li>SMP Negeri 1 Meukek, 2016 – 2019</li>
+          <li>Universitas Teuku Umar (UTU), 2022 - sekarang</li>
+          <li>SMA Negeri 1 Meukek, 2019 – 2022</li>
+          <li>SMP Negeri 1 Meukek, 2016 – 2019</li>
         </ul>
-    </section>
-
-    <section>
+      </section>
+      <section>
         <h2>Keterampilan</h2>
         <ul>
-            <li>Microsoft Office</li>
-            <li>Canva, Figma</li>
-            <li>Public Speaking</li>
-            <li>HTML, CSS</li>
+          <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+          <li>Desain & Presentasi: Canva, Figma</li>
+          <li>Public Speaking</li>
+          <li>Pemrograman Web: HTML, CSS</li>
         </ul>
-    </section>
-
-    <section>
+      </section>
+      <section>
         <h2>Kontak</h2>
-        <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/usernameanda" target="_blank">linkedin.com/in/usernameanda</a></p>
-        <p>GitHub: <a href="https://github.com/widyanti07" target="_blank">github.com/widyanti07</a></p>
-    </section>
+        <p class="contact">
+          Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a><br />
+          LinkedIn: <a href="https://www.linkedin.com/in/usernameanda" target="_blank" rel="noopener noreferrer">linkedin.com/in/usernameanda</a><br />
+          GitHub: <a href="https://github.com/widyanti07" target="_blank" rel="noopener noreferrer">github.com/widyanti07</a>
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
